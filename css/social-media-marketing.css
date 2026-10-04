@@ -1,0 +1,1124 @@
+/* =========================================================
+   NJOY CREATIONS
+   SOCIAL MEDIA MARKETING
+========================================================= */
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.sm-hero {
+
+    min-height: 92vh;
+
+    padding:
+        130px
+        5vw
+        70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-bottom:
+        1px solid var(--line);
+
+}
+
+
+.sm-hero-top,
+.sm-hero-bottom {
+
+    display: flex;
+    justify-content: space-between;
+
+    color: var(--accent-soft);
+
+    font-size: 10px;
+    letter-spacing: .1em;
+
+}
+
+
+.sm-hero-content {
+
+    max-width: 1100px;
+
+}
+
+
+.sm-eyebrow {
+
+  margin-bottom: 25px;
+
+    color:
+        var(--accent-soft);
+
+    font:
+        11px 'DM Mono';
+
+    letter-spacing:
+        .12em;
+
+}
+
+
+.sm-hero h1 {
+
+    margin: 0;
+
+    font-size:
+        clamp(
+            70px,
+            11vw,
+            170px
+        );
+
+    line-height: .78;
+
+    letter-spacing: -.075em;
+
+    font-weight: 600;
+
+}
+
+
+.sm-hero h1 span {
+
+    color: var(--accent);
+
+}
+
+
+.sm-hero-content p {
+
+    max-width: 520px;
+
+    margin-top: 55px;
+
+    color: var(--accent-soft);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.sm-intro {
+
+    display: grid;
+
+    grid-template-columns:
+        25% 75%;
+
+    gap: 30px;
+
+    padding:
+        150px 5vw;
+
+    border-bottom:
+        1px solid var(--line);
+
+}
+
+
+.sm-intro-number {
+
+    color: var(--accent-soft);
+
+    font-size: 10px;
+
+    letter-spacing: .1em;
+
+}
+
+
+.sm-intro-content {
+
+    max-width: 900px;
+
+}
+
+
+.sm-intro h2 {
+
+    margin: 0;
+
+    font-size:
+        clamp(
+            55px,
+            7vw,
+            105px
+        );
+
+    line-height: .86;
+
+    letter-spacing: -.065em;
+
+}
+
+
+.sm-intro h2 em {
+
+    color: var(--accent);
+
+    font-style: normal;
+
+}
+
+
+.sm-intro-content p {
+
+    max-width: 650px;
+
+    margin-top: 40px;
+
+    color: var(--accent-soft);
+
+    line-height: 1.7;
+
+    font-size: 15px;
+
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.sm-services,
+.sm-process {
+
+    padding:
+        130px 5vw;
+
+}
+
+
+.sm-section-head {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    padding-top: 20px;
+
+    margin-bottom: 70px;
+
+    border-top:
+        1px solid var(--line);
+
+}
+
+
+.sm-section-head > div:first-child > span {
+
+    color: var(--accent-soft);
+
+    font-size: 10px;
+
+    letter-spacing: .1em;
+
+}
+
+
+.sm-section-head h2 {
+
+    margin-top: 25px;
+
+    font-size:
+        clamp(
+            55px,
+            7vw,
+            105px
+        );
+
+    line-height: .85;
+
+    letter-spacing: -.065em;
+
+}
+
+
+.sm-section-head h2 em {
+
+    color: var(--accent);
+
+    font-style: normal;
+
+}
+
+
+.sm-index {
+
+    color: var(--accent-soft);
+
+    font-size: 10px;
+
+}
+
+
+/* =========================================================
+   SERVICE GRID
+========================================================= */
+
+/* =========================================================
+   SOCIAL MEDIA — SERVICES GRID
+========================================================= */
+
+.sm-services-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 1px;
+
+    background:
+        var(--line);
+
+    border:
+        1px solid var(--line);
+
+}
+
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.sm-service-card {
+
+    min-height:
+        350px;
+
+    padding:
+        30px;
+
+    background:
+        var(--surface);
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+
+    transition:
+        background .4s ease,
+        color .4s ease;
+
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.sm-service-card:hover {
+
+    background:
+        var(--accent);
+
+    color:
+        var(--dark);
+
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.sm-service-number {
+
+    color:
+        var(--accent-soft);
+
+    font-size:
+        10px;
+
+    font-family:
+        'DM Mono',
+        monospace;
+
+    transition:
+        color .4s ease;
+
+}
+
+
+.sm-service-card:hover
+.sm-service-number {
+
+    color:
+        var(--dark);
+
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.sm-service-icon {
+
+    margin-top:
+        60px;
+
+    width:
+        55px;
+
+    height:
+        55px;
+
+    border:
+        1px solid var(--line);
+
+    border-radius:
+        50%;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    color:
+        var(--accent);
+
+    transition:
+        color .4s ease,
+        border-color .4s ease,
+        transform .4s ease;
+
+}
+
+
+.sm-service-card:hover
+.sm-service-icon {
+
+    color:
+        var(--dark);
+
+    border-color:
+        rgba(8,8,8,.4);
+
+    transform:
+        rotate(8deg)
+        scale(1.05);
+
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.sm-service-card h3 {
+
+    margin-top:
+        35px;
+
+    font-size:
+        25px;
+
+    letter-spacing:
+        -.035em;
+
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.sm-service-card p {
+
+    max-width:
+        350px;
+
+    margin-top:
+        15px;
+
+    color:
+        var(--accent-soft);
+
+    font-size:
+        13px;
+
+    line-height:
+        1.6;
+
+    transition:
+        color .4s ease;
+
+}
+
+
+.sm-service-card:hover p {
+
+    color:
+        rgba(8,8,8,.72);
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .sm-services-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .sm-service-card {
+
+        min-height:
+            300px;
+
+        padding:
+            25px;
+
+    }
+
+
+    .sm-service-icon {
+
+        margin-top:
+            45px;
+
+    }
+
+
+    .sm-service-card h3 {
+
+        font-size:
+            23px;
+
+    }
+
+}
+/* =========================================================
+   PLATFORMS
+========================================================= */
+
+.sm-platforms {
+
+    padding:
+        130px 5vw;
+
+    background: var(--accent);
+
+    color: var(--dark);
+
+    display: grid;
+
+    grid-template-columns:
+        25% 75%;
+
+}
+
+
+.sm-platform-label {
+
+    font-size: 10px;
+
+}
+
+
+.sm-platform-content {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 70px;
+
+}
+
+
+.sm-platform-content h2 {
+
+    margin: 0;
+
+    font-size:
+        clamp(
+            55px,
+            7vw,
+            100px
+        );
+
+    line-height: .82;
+
+    letter-spacing: -.07em;
+
+}
+
+
+.sm-platform-content h2 em {
+
+    font-style: normal;
+
+    color: var(--surface);
+
+}
+
+
+.platform-list {
+
+    border-top:
+        1px solid rgba(8,8,8,.35);
+
+}
+
+
+.platform-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 22px 0;
+
+    border-bottom:
+        1px solid rgba(8,8,8,.35);
+
+    font-size: 17px;
+
+}
+
+
+.platform-icon {
+
+    width: 38px;
+    height: 38px;
+
+    border:
+        1px solid rgba(8,8,8,.45);
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sm-process {
+
+    padding:
+        140px 5vw;
+
+    border-bottom:
+        1px solid var(--line);
+
+}
+
+
+/* =========================================================
+   PROCESS LIST
+========================================================= */
+
+.sm-process-list {
+
+    border-top:
+        1px solid var(--line);
+
+}
+
+
+/* =========================================================
+   PROCESS ITEM
+========================================================= */
+
+/* =========================================================
+   PROCESS ITEM
+========================================================= */
+
+.sm-process-item {
+
+    display: grid;
+
+    grid-template-columns:
+        100px 1fr;
+
+    gap: 30px;
+
+    padding:
+        35px 0;
+
+    border-bottom:
+        1px solid var(--line);
+
+    transition:
+        padding-left .35s ease;
+
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.sm-process-item > span {
+
+    color:
+        var(--accent);
+
+    font-size:
+        11px;
+
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.sm-process-item > div {
+
+    grid-column: 2;
+
+    display: block;
+
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.sm-process-item h3 {
+
+    margin: 0;
+
+    font-size: 30px;
+
+    letter-spacing: -.04em;
+
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.sm-process-item p {
+
+    max-width: none;
+
+    width: 100%;
+
+    margin:
+        25px 0 0;
+
+    color:
+        var(--accent-soft);
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    white-space: nowrap;
+
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.sm-process-item:hover {
+
+    padding-left: 20px;
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .sm-process {
+
+        padding:
+            100px 5vw;
+
+    }
+
+
+    .sm-process-item {
+
+        grid-template-columns:
+            55px 1fr;
+
+        gap:
+            20px;
+
+        padding:
+            28px 0;
+
+    }
+
+
+    .sm-process-item > div {
+
+        grid-column: 2;
+
+    }
+
+
+    .sm-process-item h3 {
+
+        font-size: 25px;
+
+    }
+
+
+    .sm-process-item p {
+
+        margin-top: 15px;
+
+        font-size: 13px;
+
+        white-space: normal;
+
+    }
+
+
+    .sm-process-item:hover {
+
+        padding-left: 10px;
+
+    }
+
+}
+/* =========================================================
+   CTA
+========================================================= */
+
+.sm-cta {
+
+    padding:
+        150px 5vw;
+
+    text-align: center;
+
+    border-top:
+        1px solid var(--line);
+
+}
+
+
+.sm-cta > div {
+
+    color: var(--accent-soft);
+
+    font-size: 10px;
+
+    letter-spacing: .1em;
+
+}
+
+
+.sm-cta h2 {
+
+    margin:
+        35px auto 0;
+
+    font-size:
+        clamp(
+            60px,
+            9vw,
+            140px
+        );
+
+    line-height: .8;
+
+    letter-spacing: -.075em;
+
+}
+
+
+.sm-cta h2 span {
+
+    color: var(--accent);
+
+}
+
+
+.sm-cta p {
+
+    max-width: 500px;
+
+    margin:
+        45px auto;
+
+    color: var(--accent-soft);
+
+    line-height: 1.6;
+
+}
+
+
+.sm-cta-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding:
+        16px 25px;
+
+    border:
+        1px solid var(--accent);
+
+    color: var(--accent);
+
+    text-decoration: none;
+
+    font:
+        10px 'DM Mono',
+        monospace;
+
+    letter-spacing: .1em;
+
+    transition:
+        background .35s ease,
+        color .35s ease;
+
+}
+
+
+.sm-cta-button span {
+
+    font-size: 18px;
+
+}
+
+
+.sm-cta-button:hover {
+
+    background: var(--accent);
+
+    color: var(--dark);
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 850px) {
+
+
+    .sm-hero {
+
+        min-height: 85vh;
+
+        padding:
+            120px 6vw 50px;
+
+    }
+
+
+    .sm-hero-top,
+    .sm-hero-bottom {
+
+        font-size: 9px;
+
+    }
+
+
+    .sm-hero h1 {
+
+        font-size:
+            clamp(
+                58px,
+                16vw,
+                100px
+            );
+
+    }
+
+
+    .sm-hero-content p {
+
+        margin-top: 40px;
+
+        font-size: 14px;
+
+    }
+
+
+    .sm-intro {
+
+        grid-template-columns: 1fr;
+
+        padding:
+            100px 6vw;
+
+        gap: 45px;
+
+    }
+
+
+    .sm-intro h2 {
+
+        font-size:
+            clamp(
+                48px,
+                13vw,
+                80px
+            );
+
+    }
+
+
+    .sm-services,
+    .sm-process {
+
+        padding:
+            100px 6vw;
+
+    }
+
+
+    .sm-section-head {
+
+        margin-bottom: 45px;
+
+    }
+
+
+    .sm-section-head h2 {
+
+        font-size:
+            clamp(
+                48px,
+                13vw,
+                80px
+            );
+
+    }
+
+
+    .sm-services-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .sm-service-card {
+
+        min-height: 300px;
+
+    }
+
+
+    .sm-platforms {
+
+        padding:
+            100px 6vw;
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+    }
+
+
+    .sm-platform-content {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+    }
+
+
+    .sm-platform-content h2 {
+
+        font-size:
+            clamp(
+                50px,
+                13vw,
+                80px
+            );
+
+    }
+
+
+    .sm-process-item {
+
+        grid-template-columns:
+            40px 1fr;
+
+        gap: 15px;
+
+    }
+
+
+    .sm-process-item p {
+
+        grid-column: 2;
+
+    }
+
+
+    .sm-process-item h3 {
+
+        font-size: 24px;
+
+    }
+
+
+    .sm-cta {
+
+        padding:
+            110px 6vw;
+
+    }
+
+
+    .sm-cta h2 {
+
+        font-size:
+            clamp(
+                55px,
+                14vw,
+                90px
+            );
+
+    }
+
+}

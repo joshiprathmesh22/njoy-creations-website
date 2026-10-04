@@ -1,0 +1,845 @@
+/* =========================================================
+   NJOY CREATIONS
+   ADS STRATEGY — SERVICE PAGE
+========================================================= */
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.ads-hero {
+
+    min-height: 100vh;
+
+    padding:
+        150px
+        5vw
+        60px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-bottom:
+        1px solid var(--line);
+
+}
+
+
+.ads-hero-top,
+.ads-hero-bottom {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color:
+        var(--accent-soft);
+
+    font-size: 10px;
+
+    letter-spacing: .1em;
+
+}
+
+
+.ads-hero-content {
+
+    max-width: 1100px;
+
+    padding:
+        100px
+        0;
+
+}
+
+
+.ads-eyebrow {
+
+    font:
+        10px 'DM Mono';
+
+    letter-spacing: .14em;
+
+    color:
+        var(--accent-soft);
+
+    margin-bottom: 30px;
+
+}
+
+
+.ads-hero h1 {
+
+    margin: 0;
+
+    font-size:
+        clamp(
+            65px,
+            10vw,
+            150px
+        );
+
+    line-height: .82;
+
+    letter-spacing: -.075em;
+
+}
+
+
+.ads-hero h1 span {
+
+    color:
+        var(--accent);
+
+}
+
+
+.ads-hero h1 em {
+
+    color:
+        var(--accent-soft);
+
+    font-style: normal;
+
+}
+
+
+.ads-hero-content p {
+
+    max-width: 480px;
+
+    margin-top: 45px;
+
+    color:
+        var(--accent-soft);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.ads-intro {
+
+    padding:
+        140px
+        5vw;
+
+    display: grid;
+
+    grid-template-columns:
+        25% 75%;
+
+    border-bottom:
+        1px solid var(--line);
+
+}
+
+
+.ads-section-number {
+
+    color:
+        var(--accent-soft);
+
+    font-size: 10px;
+
+    letter-spacing: .1em;
+
+}
+
+
+.ads-intro-content {
+
+    display: grid;
+
+    grid-template-columns:
+        1.2fr .8fr;
+
+    gap: 80px;
+
+}
+
+
+.ads-intro h2 {
+
+    margin: 0;
+
+    font-size:
+        clamp(
+            55px,
+            7vw,
+            110px
+        );
+
+    line-height: .85;
+
+    letter-spacing: -.07em;
+
+}
+
+
+.ads-intro h2 em {
+
+    color:
+        var(--accent);
+
+    font-style: normal;
+
+}
+
+
+.ads-intro-content p {
+
+    max-width: 450px;
+
+    color:
+        var(--accent-soft);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.ads-services {
+
+    padding:
+        140px
+        5vw;
+
+    border-bottom:
+        1px solid var(--line);
+
+}
+
+
+.ads-section-heading {
+
+    margin-bottom: 70px;
+
+}
+
+
+.ads-section-heading > div {
+
+    color:
+        var(--accent-soft);
+
+    font-size: 10px;
+
+    letter-spacing: .1em;
+
+}
+
+
+.ads-section-heading h2 {
+
+    margin-top: 25px;
+
+    font-size:
+        clamp(
+            55px,
+            7vw,
+            110px
+        );
+
+    line-height: .85;
+
+    letter-spacing: -.07em;
+
+}
+
+
+.ads-service-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.ads-service-card {
+
+    position: relative;
+
+    min-height: 440px;
+
+    padding: 35px;
+
+    border:
+        1px solid var(--line);
+
+    background:
+        var(--surface);
+
+    overflow: hidden;
+
+    transition:
+        background .5s ease,
+        color .5s ease,
+        transform .5s ease;
+
+}
+
+
+.ads-service-card:hover {
+
+    background:
+        var(--accent);
+
+    color:
+        var(--dark);
+
+    transform:
+        translateY(-8px);
+
+}
+
+
+.ads-card-number {
+
+    color:
+        var(--accent-soft);
+
+    font-size: 10px;
+
+}
+
+
+.ads-service-card:hover
+.ads-card-number {
+
+    color:
+        var(--dark);
+
+}
+
+
+.ads-card-icon {
+
+    margin-top: 55px;
+
+    font-size: 32px;
+
+    color:
+        var(--accent);
+
+    transition:
+        color .4s ease;
+
+}
+
+
+.ads-service-card:hover
+.ads-card-icon {
+
+    color:
+        var(--dark);
+
+}
+
+
+.ads-service-card h3 {
+
+    margin-top: 35px;
+
+    font-size:
+        clamp(
+            34px,
+            4vw,
+            58px
+        );
+
+    line-height: .9;
+
+    letter-spacing: -.06em;
+
+}
+
+
+.ads-service-card p {
+
+    max-width: 500px;
+
+    margin-top: 25px;
+
+    color:
+        var(--accent-soft);
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+}
+
+
+.ads-service-card:hover p {
+
+    color:
+        rgba(8,8,8,.7);
+
+}
+
+
+.ads-card-tags {
+
+    position: absolute;
+
+    bottom: 30px;
+
+    left: 35px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+}
+
+
+.ads-card-tags span {
+
+    padding:
+        7px 10px;
+
+    border:
+        1px solid var(--line);
+
+    color:
+        var(--accent-soft);
+
+    font:
+        9px 'DM Mono';
+
+    letter-spacing: .08em;
+
+}
+
+
+.ads-service-card:hover
+.ads-card-tags span {
+
+    border-color:
+        rgba(8,8,8,.35);
+
+    color:
+        var(--dark);
+
+}
+
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+/* =========================================================
+   ADS STRATEGY — PROCESS
+========================================================= */
+
+.ads-process {
+
+    padding:
+        140px 5vw;
+
+    border-bottom:
+        1px solid var(--line);
+
+}
+
+
+/* =========================================================
+   PROCESS LIST
+========================================================= */
+
+.ads-process-list {
+
+    border-top:
+        1px solid var(--line);
+
+}
+
+
+/* =========================================================
+   PROCESS ITEM
+========================================================= */
+
+.ads-process-item {
+
+    display: grid;
+
+    grid-template-columns:
+        100px 1fr;
+
+    gap:
+        30px;
+
+    padding:
+        35px 0;
+
+    border-bottom:
+        1px solid var(--line);
+
+    transition:
+        padding-left .35s ease;
+
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.ads-process-item:hover {
+
+    padding-left:
+        20px;
+
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.ads-process-item > span {
+
+    color:
+        var(--accent);
+
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.ads-process-item h3 {
+
+    margin:
+        0;
+
+    font-size:
+        30px;
+
+    letter-spacing:
+        -.04em;
+
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.ads-process-item p {
+
+    max-width:
+        600px;
+
+    margin-top:
+        12px;
+
+    color:
+        var(--accent-soft);
+
+    line-height:
+        1.6;
+
+}
+/* =========================================================
+   CTA
+========================================================= */
+
+.ads-cta {
+
+    padding:
+        160px
+        5vw;
+
+    text-align: center;
+
+}
+
+
+.ads-cta > div {
+
+    color:
+        var(--accent-soft);
+
+    font-size: 10px;
+
+    letter-spacing: .1em;
+
+}
+
+
+.ads-cta h2 {
+
+    margin:
+        40px auto;
+
+    max-width: 1100px;
+
+    font-size:
+        clamp(
+            55px,
+            8vw,
+            125px
+        );
+
+    line-height: .85;
+
+    letter-spacing: -.075em;
+
+}
+
+
+.ads-cta h2 span {
+
+    color:
+        var(--accent);
+
+}
+
+
+.ads-cta p {
+
+    max-width: 500px;
+
+    margin:
+        0 auto 45px;
+
+    color:
+        var(--accent-soft);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+}
+
+
+.ads-cta-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding:
+        16px 24px;
+
+    border:
+        1px solid var(--accent);
+
+    color:
+        var(--accent);
+
+    text-decoration: none;
+
+    font:
+        10px 'DM Mono';
+
+    letter-spacing: .08em;
+
+    transition:
+        background .35s ease,
+        color .35s ease;
+
+}
+
+
+.ads-cta-button:hover {
+
+    background:
+        var(--accent);
+
+    color:
+        var(--dark);
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 850px) {
+
+
+    .ads-hero {
+
+        min-height: 90vh;
+
+        padding:
+            130px
+            6vw
+            40px;
+
+    }
+
+
+    .ads-hero-top,
+    .ads-hero-bottom {
+
+        font-size: 8px;
+
+    }
+
+
+    .ads-hero-content {
+
+        padding:
+            70px 0;
+
+    }
+
+
+    .ads-hero h1 {
+
+        font-size:
+            clamp(
+                55px,
+                15vw,
+                90px
+            );
+
+    }
+
+
+    .ads-hero-content p {
+
+        font-size: 13px;
+
+    }
+
+
+    .ads-intro {
+
+        padding:
+            90px 6vw;
+
+        display: block;
+
+    }
+
+
+    .ads-intro-content {
+
+        display: block;
+
+        margin-top: 50px;
+
+    }
+
+
+    .ads-intro h2 {
+
+        font-size:
+            clamp(
+                55px,
+                15vw,
+                90px
+            );
+
+    }
+
+
+    .ads-intro-content p {
+
+        margin-top: 50px;
+
+    }
+
+
+    .ads-services,
+    .ads-process {
+
+        padding:
+            90px 6vw;
+
+    }
+
+
+    .ads-service-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+    }
+
+
+    .ads-service-card {
+
+        min-height: 430px;
+
+        padding: 28px;
+
+    }
+
+
+    .ads-card-tags {
+
+        left: 28px;
+
+        bottom: 25px;
+
+    }
+
+
+    .ads-process-item {
+
+        grid-template-columns:
+            45px 1fr;
+
+        gap: 20px;
+
+    }
+
+
+    .ads-process-item h3 {
+
+        font-size: 23px;
+
+    }
+
+
+    .ads-cta {
+
+        padding:
+            110px 6vw;
+
+    }
+
+
+    .ads-cta h2 {
+
+        font-size:
+            clamp(
+                50px,
+                14vw,
+                85px
+            );
+
+    }
+
+}

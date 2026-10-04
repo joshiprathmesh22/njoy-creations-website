@@ -1,0 +1,970 @@
+/* =========================================================
+   NJOY CREATIONS
+   CINEMATOGRAPHY PAGE
+========================================================= */
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.cine-hero {
+
+    min-height: 92vh;
+
+    padding:
+        150px
+        5vw
+        70px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    border-bottom:
+        1px solid var(--line);
+
+}
+
+
+.cine-hero-top,
+.cine-hero-bottom {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: var(--accent-soft);
+
+    font-size: 10px;
+
+    letter-spacing: .12em;
+
+}
+
+
+.cine-hero-content {
+
+    max-width: 1100px;
+
+}
+
+
+.cine-eyebrow {
+
+    margin-bottom: 25px;
+
+    color: var(--accent);
+
+    font:
+        11px
+        'DM Mono';
+
+    letter-spacing: .14em;
+
+}
+
+
+.cine-hero h1 {
+
+    margin: 0;
+
+    font-size:
+        clamp(
+            70px,
+            12vw,
+            180px
+        );
+
+    line-height: .82;
+
+    letter-spacing: -.075em;
+
+}
+
+
+.cine-hero h1 span {
+
+    color: var(--accent);
+
+}
+
+
+.cine-hero-content p {
+
+    max-width: 520px;
+
+    margin-top: 45px;
+
+    color: var(--accent-soft);
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================================
+   COMMON SECTION LABEL
+========================================================= */
+
+.cine-section-label {
+
+    color: var(--accent-soft);
+
+    font-size: 10px;
+
+    letter-spacing: .12em;
+
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.cine-intro {
+
+    padding:
+        130px
+        5vw;
+
+    border-bottom:
+        1px solid var(--line);
+
+}
+
+
+.cine-intro-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.3fr
+        .7fr;
+
+    gap: 8vw;
+
+    margin-top: 70px;
+
+}
+
+
+.cine-intro h2 {
+
+    margin: 0;
+
+    font-size:
+        clamp(
+            55px,
+            8vw,
+            120px
+        );
+
+    line-height: .85;
+
+    letter-spacing: -.07em;
+
+}
+
+
+.cine-intro h2 em {
+
+    color: var(--accent);
+
+    font-style: normal;
+
+}
+
+
+.cine-intro-text {
+
+    padding-top: 15px;
+
+}
+
+
+.cine-intro-text p {
+
+    max-width: 500px;
+
+    margin-bottom: 30px;
+
+    color: var(--accent-soft);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   FEATURE IMAGE
+========================================================= */
+
+.cine-feature {
+
+    padding:
+        100px
+        5vw;
+
+}
+
+
+.cine-feature-image {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 75vh;
+
+    min-height: 500px;
+
+    overflow: hidden;
+
+    background: var(--surface);
+
+}
+
+
+.cine-feature-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform
+        1.2s
+        cubic-bezier(
+            .16,
+            1,
+            .3,
+            1
+        );
+
+}
+
+
+.cine-feature-image:hover img {
+
+    transform:
+        scale(1.04);
+
+}
+
+
+.cine-feature-overlay {
+
+    position: absolute;
+
+    inset:
+        auto 0 0;
+
+    padding: 25px;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(8,8,8,.9)
+        );
+
+    color: var(--accent);
+
+    font:
+        10px
+        'DM Mono';
+
+    letter-spacing: .12em;
+
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.cine-services {
+
+    padding:
+        100px
+        5vw
+        140px;
+
+    border-top:
+        1px solid var(--line);
+
+}
+
+
+.cine-services-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 1px;
+
+    margin-top: 70px;
+
+    background: var(--line);
+
+    border:
+        1px solid var(--line);
+
+}
+
+
+.cine-service-card {
+
+    position: relative;
+
+    min-height: 330px;
+
+    padding: 35px;
+
+    background: var(--surface);
+
+    transition:
+        background
+        .4s ease;
+
+}
+
+
+.cine-service-card:hover {
+
+    background: var(--accent);
+
+    color: var(--dark);
+
+}
+
+
+.cine-service-card:hover p,
+.cine-service-card:hover .cine-service-number {
+
+    color: var(--dark);
+
+}
+
+
+.cine-service-number {
+
+    color: var(--accent-soft);
+
+    font-size: 10px;
+
+    letter-spacing: .1em;
+
+}
+
+
+.cine-service-icon {
+
+    margin-top: 55px;
+
+    color: var(--accent);
+
+    font-size: 30px;
+
+}
+
+
+.cine-service-card:hover
+.cine-service-icon {
+
+    color: var(--dark);
+
+}
+
+
+.cine-service-card h3 {
+
+    margin-top: 25px;
+
+    font-size: 30px;
+
+    letter-spacing: -.04em;
+
+}
+
+
+.cine-service-card p {
+
+    max-width: 430px;
+
+    margin-top: 15px;
+
+    color: var(--accent-soft);
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================================
+   PROCESS
+========================================================= */
+/* =========================================================
+   CINEMATOGRAPHY PROCESS
+========================================================= */
+
+.cine-process {
+
+    padding:
+        140px 5vw;
+
+    border-top:
+        1px solid var(--line);
+
+}
+
+
+/* =========================================================
+   PROCESS HEADING
+========================================================= */
+
+.cine-process > h2 {
+
+    max-width:
+        1000px;
+
+    margin:
+        70px 0 100px;
+
+    font-size:
+        clamp(
+            55px,
+            9vw,
+            140px
+        );
+
+    line-height:
+        .82;
+
+    letter-spacing:
+        -.07em;
+
+}
+
+
+.cine-process > h2 span {
+
+    color:
+        var(--accent);
+
+}
+
+
+/* =========================================================
+   PROCESS LIST
+========================================================= */
+
+.cine-process-list {
+
+    border-top:
+        1px solid var(--line);
+
+}
+
+
+/* =========================================================
+   PROCESS ITEM
+========================================================= */
+
+.cine-process-item {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        100px 1fr;
+
+    gap:
+        30px;
+
+    padding:
+        35px 0;
+
+    border-bottom:
+        1px solid var(--line);
+
+    transition:
+        padding-left .35s ease;
+
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.cine-process-item > span {
+
+    color:
+        var(--accent);
+
+    font-size:
+        11px;
+
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.cine-process-content {
+
+    display:
+        block;
+
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.cine-process-content h3 {
+
+    margin:
+        0;
+
+    font-size:
+        30px;
+
+    letter-spacing:
+        -.04em;
+
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.cine-process-content p {
+
+    margin:
+        25px 0 0;
+
+    max-width:
+        none;
+
+    width:
+        100%;
+
+    color:
+        var(--accent-soft);
+
+    font-size:
+        13px;
+
+    line-height:
+        1.6;
+
+    white-space:
+        nowrap;
+
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.cine-process-item:hover {
+
+    padding-left:
+        20px;
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .cine-process {
+
+        padding:
+            100px 5vw;
+
+    }
+
+
+    .cine-process > h2 {
+
+        margin:
+            50px 0 70px;
+
+    }
+
+
+    .cine-process-item {
+
+        grid-template-columns:
+            55px 1fr;
+
+        gap:
+            20px;
+
+        padding:
+            28px 0;
+
+    }
+
+
+    .cine-process-content h3 {
+
+        font-size:
+            25px;
+
+    }
+
+
+    .cine-process-content p {
+
+        margin-top:
+            12px;
+
+        white-space:
+            normal;
+
+        font-size:
+            13px;
+
+    }
+
+
+    .cine-process-item:hover {
+
+        padding-left:
+            10px;
+
+    }
+
+}
+/* =========================================================
+   CTA
+========================================================= */
+
+.cine-cta {
+
+    padding:
+        150px
+        5vw;
+
+    text-align: center;
+
+    border-top:
+        1px solid var(--line);
+
+}
+
+
+.cine-cta > div {
+
+    color: var(--accent-soft);
+
+    font-size: 10px;
+
+    letter-spacing: .12em;
+
+}
+
+
+.cine-cta h2 {
+
+    margin:
+        55px
+        0
+        25px;
+
+    font-size:
+        clamp(
+            60px,
+            10vw,
+            150px
+        );
+
+    line-height: .82;
+
+    letter-spacing: -.075em;
+
+}
+
+
+.cine-cta h2 span {
+
+    color: var(--accent);
+
+}
+
+
+.cine-cta p {
+
+    color: var(--accent-soft);
+
+    font-size: 15px;
+
+    margin-bottom: 40px;
+
+}
+
+
+.cine-cta-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding:
+        17px
+        24px;
+
+    border:
+        1px solid var(--accent);
+
+    color: var(--accent);
+
+    text-decoration: none;
+
+    font:
+        10px
+        'DM Mono';
+
+    letter-spacing: .1em;
+
+    transition:
+        background
+        .3s ease,
+        color
+        .3s ease;
+
+}
+
+
+.cine-cta-button:hover {
+
+    background: var(--accent);
+
+    color: var(--dark);
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 850px) {
+
+
+    .cine-hero {
+
+        min-height: 80vh;
+
+        padding:
+            130px
+            6vw
+            45px;
+
+    }
+
+
+    .cine-hero-top,
+    .cine-hero-bottom {
+
+        font-size: 9px;
+
+    }
+
+
+    .cine-hero-bottom span:last-child {
+
+        display: none;
+
+    }
+
+
+    .cine-hero h1 {
+
+        font-size:
+            clamp(
+                58px,
+                15vw,
+                100px
+            );
+
+    }
+
+
+    .cine-hero-content p {
+
+        font-size: 14px;
+
+        margin-top: 30px;
+
+    }
+
+
+    .cine-intro {
+
+        padding:
+            90px
+            6vw;
+
+    }
+
+
+    .cine-intro-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        margin-top: 50px;
+
+    }
+
+
+    .cine-intro h2 {
+
+        font-size:
+            clamp(
+                48px,
+                13vw,
+                80px
+            );
+
+    }
+
+
+    .cine-feature {
+
+        padding:
+            60px
+            6vw;
+
+    }
+
+
+    .cine-feature-image {
+
+        height: 55vh;
+
+        min-height: 400px;
+
+    }
+
+
+    .cine-services {
+
+        padding:
+            80px
+            6vw
+            100px;
+
+    }
+
+
+    .cine-services-grid {
+
+        grid-template-columns: 1fr;
+
+        margin-top: 50px;
+
+    }
+
+
+    .cine-service-card {
+
+        min-height: 290px;
+
+    }
+
+
+    .cine-process {
+
+        padding:
+            90px
+            6vw;
+
+    }
+
+
+    .cine-process > h2 {
+
+        margin:
+            50px
+            0
+            70px;
+
+        font-size:
+            clamp(
+                50px,
+                13vw,
+                85px
+            );
+
+    }
+
+
+    .cine-process-item {
+
+        grid-template-columns:
+            45px
+            1fr;
+
+        gap: 15px;
+
+    }
+
+
+    .cine-process-item h3 {
+
+        font-size: 24px;
+
+    }
+
+
+    .cine-cta {
+
+        padding:
+            100px
+            6vw;
+
+    }
+
+
+    .cine-cta h2 {
+
+        font-size:
+            clamp(
+                52px,
+                14vw,
+                90px
+            );
+
+    }
+
+}

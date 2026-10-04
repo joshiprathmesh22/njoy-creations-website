@@ -1,0 +1,218 @@
+/* =========================================================
+   HOMEPAGE WORK GRID — EQUAL SIZE CARDS
+========================================================= */
+
+.work-grid {
+    column-count: 2;
+    column-gap: 35px;
+}
+
+.work-grid .card {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+
+    margin: 0 0 70px;
+}
+
+/* Remove old even-card offset */
+.work-grid .card:nth-child(even) {
+    margin-top: 0;
+}
+
+
+/* =========================================================
+   IMAGE CONTAINER
+========================================================= */
+
+.card-bg {
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
+
+    /* SAME HEIGHT FOR EVERY CARD */
+    aspect-ratio: 4 / 3;
+
+    background: var(--surface);
+}
+
+
+/* =========================================================
+   CARD IMAGE
+========================================================= */
+
+.card-image {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    /* Fill the exact same card size */
+    object-fit: cover;
+
+    transition:
+        transform .8s cubic-bezier(
+            .16,
+            1,
+            .3,
+            1
+        );
+}
+
+.card-link:hover .card-image {
+    transform: scale(1.04);
+}
+
+
+/* =========================================================
+   WORK CARD OVERLAY
+========================================================= */
+
+.card-overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(8, 8, 8, .58);
+
+    opacity: 0;
+
+    transition:
+        opacity .4s ease;
+}
+
+.card-link:hover .card-overlay {
+    opacity: 1;
+}
+
+
+.card-overlay span {
+    width: 100px;
+    height: 100px;
+
+    border: 1px solid var(--accent);
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    color: var(--accent);
+
+    font-size: 10px;
+    letter-spacing: .08em;
+
+    transform: scale(.7);
+
+    transition:
+        transform .45s cubic-bezier(
+            .16,
+            1,
+            .3,
+            1
+        );
+}
+
+.card-link:hover .card-overlay span {
+    transform: scale(1);
+}
+
+
+/* =========================================================
+   CARD LABEL
+========================================================= */
+
+.card-label {
+    padding-top: 18px;
+}
+
+.card-title {
+    color: var(--white);
+}
+
+.card-meta {
+    color: var(--accent-soft);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .work-grid {
+        column-count: 1;
+        width: 100%;
+    }
+
+    .work-grid .card {
+        width: 100%;
+        display: block;
+
+        margin: 0 0 45px;
+
+        break-inside: auto;
+    }
+
+    .work-grid .card-link {
+        display: block;
+        width: 100%;
+    }
+
+
+    /* Same size on mobile too */
+    .work-grid .card-bg {
+        width: 100%;
+
+        aspect-ratio: 4 / 3;
+
+        overflow: hidden;
+    }
+
+    .work-grid .card-image {
+        width: 100%;
+        height: 100%;
+
+        display: block;
+
+        object-fit: cover;
+    }
+
+
+    /* No hover overlay on mobile */
+    .card-overlay {
+        display: none;
+    }
+
+
+    /* Card text */
+    .work-grid .card-label {
+        height: auto;
+        min-height: 0;
+
+        padding: 22px 0 8px;
+    }
+
+    .work-grid .card-title {
+        font-size: 26px;
+        line-height: 1.05;
+    }
+
+    .work-grid .card-meta {
+        margin-top: 10px;
+
+        font-size: 11px;
+        line-height: 1.4;
+    }
+}

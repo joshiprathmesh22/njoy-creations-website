@@ -1,0 +1,1202 @@
+/* =========================================================
+   NJOY CREATIONS
+   WORK PAGE
+========================================================= */
+
+
+/* =========================================================
+   WORK HERO
+========================================================= */
+
+.work-hero {
+
+    min-height: 82vh;
+
+    padding:
+        150px
+        5vw
+        80px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+/* subtle background grid */
+
+.work-hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(247, 244, 236, .045) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(247, 244, 236, .045) 1px,
+            transparent 1px
+        );
+
+    background-size:
+        80px 80px;
+
+    pointer-events: none;
+
+    mask-image:
+        linear-gradient(
+            to bottom,
+            black,
+            transparent
+        );
+
+}
+
+
+.work-hero-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    position: relative;
+
+    z-index: 1;
+
+    color: var(--accent-soft);
+
+}
+
+
+.work-hero-title {
+
+    position: relative;
+
+    z-index: 1;
+
+    margin-top: 80px;
+
+}
+
+
+.eyebrow {
+
+    color: var(--accent);
+
+    font-size: 12px;
+
+    letter-spacing: .18em;
+
+    margin-bottom: 25px;
+
+}
+
+
+.work-hero h1 {
+
+    margin: 0;
+
+    font-size:
+        clamp(
+            80px,
+            13vw,
+            210px
+        );
+
+    line-height: .82;
+
+    letter-spacing: -.065em;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+}
+
+
+.work-hero h1 span {
+
+    color: var(--accent);
+
+}
+
+
+.work-hero-bottom {
+
+    position: relative;
+
+    z-index: 1;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    margin-top: 80px;
+
+}
+
+
+.work-hero-bottom p {
+
+    max-width: 430px;
+
+    color: var(--accent-soft);
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+}
+
+
+.work-hero-bottom .mono {
+
+    color: var(--white);
+
+}
+
+
+/* =========================================================
+   WORK SECTION
+========================================================= */
+
+.work-section {
+
+    padding:
+        100px
+        5vw
+        140px;
+
+}
+
+
+.section-heading {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    margin-bottom: 70px;
+
+    border-top:
+        1px solid var(--line);
+
+    padding-top: 20px;
+
+}
+
+
+.section-number {
+
+    color: var(--accent-soft);
+
+}
+
+
+.section-heading h2 {
+
+    margin-top: 20px;
+
+    font-size:
+        clamp(
+            50px,
+            7vw,
+            105px
+        );
+
+    line-height: .9;
+
+    letter-spacing: -.05em;
+
+}
+
+
+.section-heading p {
+
+    text-align: right;
+
+    color: var(--accent-soft);
+
+    line-height: 1.5;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   WORK GRID
+========================================================= */
+
+.work-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap:
+        90px 35px;
+
+}
+
+
+/* =========================================================
+   WORK CARD
+========================================================= */
+
+.work-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    width: 100%;
+    /* height: 620px; */
+    /* height: fit-content; */
+    min-height: 520px;
+
+    border: 1px solid var(--line);
+
+    background: var(--surface);
+
+    margin: 0;
+
+    grid-column: auto;
+}
+
+
+.work-card:nth-child(even) {
+
+    /* margin-top: 130px; */
+
+}
+
+
+.work-link {
+
+    display: block;
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+
+.work-image {
+
+  width: 100%;
+    height: 100%;
+
+    display: block;
+
+    /* Fill the exact same card size */
+    object-fit: cover;
+
+    transition:
+        transform .8s cubic-bezier(
+            .16,
+            1,
+            .3,
+            1
+        );
+
+}
+
+
+.work-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform .8s cubic-bezier(
+            .16,
+            1,
+            .3,
+            1
+        );
+
+}
+
+
+.work-link:hover
+.work-image img {
+
+    transform:
+        scale(1.06);
+
+}
+
+
+/* =========================================================
+   IMAGE OVERLAY
+========================================================= */
+
+.work-overlay {
+ position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(8, 8, 8, .58);
+
+    opacity: 0;
+
+    transition:
+        opacity .4s ease;
+}
+
+
+.work-link:hover
+.work-overlay {
+
+    opacity: 1;
+
+}
+
+
+.work-overlay span {
+
+    width: 110px;
+
+    height: 110px;
+
+    border:
+        1px solid
+        var(--accent);
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: var(--accent);
+
+    font-size: 11px;
+
+    letter-spacing: .08em;
+
+    transform:
+        scale(.7);
+
+    transition:
+        transform .45s
+        cubic-bezier(
+            .16,
+            1,
+            .3,
+            1
+        );
+
+}
+
+
+.work-link:hover
+.work-overlay span {
+
+    transform:
+        scale(1);
+
+}
+
+
+/* =========================================================
+   WORK INFORMATION
+========================================================= */
+
+.work-info {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    padding-top: 20px;
+
+}
+
+
+.work-info h3 {
+
+    margin: 0;
+
+    font-size: 20px;
+
+    letter-spacing: -.02em;
+
+    font-weight: 600;
+
+}
+
+
+.work-info p {
+
+    margin-top: 7px;
+
+    color: var(--accent-soft);
+
+    font-size: 13px;
+
+}
+
+
+.work-info .mono {
+
+    color: var(--accent);
+
+}
+
+
+/* =========================================================
+   TAGS
+========================================================= */
+
+/* =========================================================
+   WORK INFORMATION
+========================================================= */
+
+.work-info {
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 75px;   /* space reserved for tags */
+
+    z-index: 5;
+
+    padding: 25px;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(8, 8, 8, .95)
+        );
+
+}
+
+
+/* =========================================================
+   WORK TITLE
+========================================================= */
+
+.work-info h3 {
+
+    margin: 0;
+
+    font-size: 24px;
+
+    letter-spacing: -.03em;
+
+    font-weight: 600;
+
+    color: var(--white);
+
+}
+
+
+.work-info p {
+
+    margin-top: 8px;
+
+    color: var(--accent-soft);
+
+    font-size: 13px;
+
+}
+
+
+.work-info .mono {
+
+    color: var(--accent);
+
+}
+
+
+/* =========================================================
+   TAGS
+========================================================= */
+/* =========================================================
+   TAGS — FIXED POSITION IN EVERY CARD
+========================================================= */
+
+.work-tags {
+
+    position: absolute;
+
+    left: 25px;
+
+    bottom: 25px;
+
+    z-index: 10;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+}
+
+
+.work-tags span {
+
+    display: inline-block;
+
+    border:
+        1px solid var(--line);
+
+    padding:
+        7px 11px;
+
+    font-size: 10px;
+
+    letter-spacing: .08em;
+
+    color: var(--accent-soft);
+
+    background:
+        rgba(8, 8, 8, .35);
+
+}
+/* =========================================================
+   CTA
+========================================================= */
+
+.work-cta {
+
+    min-height: 70vh;
+
+    padding:
+        120px 5vw;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    border-top:
+        1px solid var(--line);
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.work-cta::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(
+                214,
+                180,
+                119,
+                .12
+            ),
+            transparent 65%
+        );
+
+    right: -150px;
+
+    bottom: -200px;
+
+    pointer-events: none;
+
+}
+
+
+.work-cta .mono {
+
+    color: var(--accent-soft);
+
+    margin-bottom: 30px;
+
+}
+
+
+.work-cta h2 {
+
+    font-size:
+        clamp(
+            55px,
+            9vw,
+            145px
+        );
+
+    line-height: .85;
+
+    letter-spacing: -.06em;
+
+    margin: 0 0 55px;
+
+}
+
+
+.work-cta h2 span {
+
+    color: var(--accent);
+
+}
+
+
+/* =========================================================
+   CTA BUTTON
+========================================================= */
+
+.cta-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 35px;
+
+    padding:
+        18px 25px;
+
+    border:
+        1px solid
+        var(--accent);
+
+    color:
+        var(--accent);
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    letter-spacing: .08em;
+
+    transition:
+        background .3s ease,
+        color .3s ease;
+
+}
+
+
+.cta-button span {
+
+    font-size: 18px;
+
+    transition:
+        transform .3s ease;
+
+}
+
+
+.cta-button:hover {
+
+    background:
+        var(--accent);
+
+    color:
+        var(--dark);
+
+}
+
+
+.cta-button:hover span {
+
+    transform:
+        translate(
+            4px,
+            -4px
+        );
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+
+
+/* =========================================================
+   REVEAL
+========================================================= */
+
+.work-card,
+.section-heading,
+.work-cta {
+
+    opacity: 0;
+
+    transform:
+        translateY(35px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s
+        cubic-bezier(
+            .16,
+            1,
+            .3,
+            1
+        );
+
+}
+
+
+.work-card.show,
+.section-heading.show,
+.work-cta.show {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+}
+
+
+/* =========================================================
+   TABLET + MOBILE WORK
+========================================================= */
+
+/* =========================================================
+   TABLET + MOBILE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    /* =====================================================
+       WORK GRID
+    ===================================================== */
+
+    .work-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+
+    /* =====================================================
+       WORK CARD
+    ===================================================== */
+
+    .work-card {
+        display: block !important;
+
+        width: 100% !important;
+
+        height: auto !important;
+        min-height: 0 !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        grid-column: auto !important;
+
+        position: relative !important;
+
+        overflow: hidden !important;
+
+        border: 1px solid var(--line);
+
+        background: var(--surface);
+    }
+
+
+    /* =====================================================
+       IMAGE
+       - FULL IMAGE VISIBLE
+       - NO CROPPING
+       - HEIGHT FOLLOWS IMAGE RATIO
+    ===================================================== */
+
+    .work-link {
+        display: block;
+
+        width: 100%;
+
+        margin: 0;
+        padding: 0;
+
+        line-height: 0;
+    }
+
+
+    .work-image {
+        position: relative;
+
+        width: 100%;
+
+        height: auto !important;
+
+        aspect-ratio: auto !important;
+
+        overflow: visible;
+
+        background: var(--surface);
+    }
+
+
+    .work-image img {
+        display: block;
+
+        position: relative !important;
+
+        inset: auto !important;
+
+        width: 100% !important;
+
+        height: auto !important;
+
+        max-width: 100% !important;
+
+        object-fit: contain !important;
+
+        transform: none !important;
+    }
+
+
+    /* =====================================================
+       REMOVE DESKTOP HOVER CIRCLE
+    ===================================================== */
+
+    .work-overlay {
+        display: none !important;
+    }
+
+
+    /* =====================================================
+       WORK INFO
+       - RESET DESKTOP ABSOLUTE POSITIONING
+       - NO RESERVED 75px SPACE
+    ===================================================== */
+
+    .work-info {
+        position: relative !important;
+
+        /* IMPORTANT:
+           Reset desktop absolute-position values */
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+
+        display: flex !important;
+
+        justify-content: space-between;
+
+        align-items: flex-start;
+
+        width: 100%;
+
+        height: auto !important;
+
+        min-height: 0 !important;
+
+        margin: 0 !important;
+
+        padding: 16px 16px 0 !important;
+
+        background: var(--surface);
+    }
+
+
+    .work-info h3 {
+        margin: 0 !important;
+
+        padding: 0;
+
+        font-size: 20px;
+
+        line-height: 1.1;
+
+        letter-spacing: -.03em;
+    }
+
+
+    .work-info p {
+        margin: 5px 0 0 !important;
+
+        padding: 0 !important;
+
+        color: var(--accent-soft);
+
+        font-size: 12px;
+
+        line-height: 1.4;
+    }
+
+
+    .work-info > .mono {
+        flex-shrink: 0;
+
+        margin: 2px 0 0 15px !important;
+
+        color: var(--accent);
+
+        font-size: 10px;
+    }
+
+
+    /* =====================================================
+       TAGS
+       - DIRECTLY AFTER WORK INFO
+       - NO EXTRA GAP
+    ===================================================== */
+
+    .work-tags {
+        position: relative !important;
+
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+
+        display: flex !important;
+
+        flex-wrap: wrap;
+
+        align-items: center;
+
+        gap: 8px;
+
+        width: 100% !important;
+
+        height: auto !important;
+
+        min-height: 0 !important;
+
+        margin: 0 !important;
+
+        padding: 0 16px !important;
+
+        background: var(--surface);
+    }
+
+
+    .work-tags span {
+        display: inline-flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        width: auto !important;
+
+        height: auto !important;
+
+        margin: 0 !important;
+
+        padding: 7px 11px !important;
+
+        border: 1px solid var(--line);
+
+        color: var(--accent-soft);
+
+        font-size: 9px;
+
+        line-height: 1;
+
+        letter-spacing: .08em;
+    }
+
+
+    /* =====================================================
+       VIEW PROJECT
+    ===================================================== */
+
+    .work-view-link {
+        display: flex !important;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+        width: calc(100% - 32px);
+
+        margin: 18px 16px 16px !important;
+
+        padding: 12px 0 !important;
+
+        border-top: 1px solid var(--line);
+
+        border-bottom: 1px solid var(--line);
+
+        color: var(--accent);
+
+        text-decoration: none;
+
+        font: 10px 'DM Mono';
+
+        letter-spacing: .1em;
+
+        text-transform: uppercase;
+
+        background: transparent;
+    }
+
+
+    .work-view-link span {
+        display: block;
+    }
+
+
+    .work-view-link:hover {
+        color: var(--accent);
+
+        background: transparent;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .work-grid {
+        gap: 35px;
+    }
+
+
+    .work-card {
+        width: 100% !important;
+    }
+
+
+    /* =====================================================
+       WORK INFO
+       - RESET ALL DESKTOP POSITIONING
+    ===================================================== */
+
+    .work-info {
+        padding: 14px 14px 0 !important;
+
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+    }
+
+
+    .work-info h3 {
+        font-size: 18px;
+    }
+
+
+    .work-info p {
+        margin-top: 4px !important;
+
+        padding-bottom: 0 !important;
+
+        font-size: 11px;
+    }
+
+
+    .work-info > .mono {
+        margin-left: 10px !important;
+
+        font-size: 9px;
+    }
+
+
+    /* =====================================================
+       TAGS
+       - DIRECTLY AFTER CLIENT / BRAND
+    ===================================================== */
+
+    .work-tags {
+        gap: 7px;
+
+        margin-top: 0 !important;
+
+        padding: 0 14px !important;
+
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+    }
+
+
+    .work-tags span {
+        padding: 6px 9px !important;
+
+        font-size: 8px;
+    }
+
+
+    /* =====================================================
+       VIEW PROJECT
+    ===================================================== */
+
+    .work-view-link {
+        width: calc(100% - 28px);
+
+        margin: 17px 14px 14px !important;
+
+        padding: 11px 0 !important;
+
+        font-size: 9px;
+    }
+
+}
+
+
+/* =========================================================
+   DESKTOP
+========================================================= */
+
+@media (min-width: 851px) {
+
+    .work-view-link {
+        display: none !important;
+    }
+
+}

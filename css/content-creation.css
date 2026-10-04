@@ -1,0 +1,1093 @@
+/* =========================================================
+   NJOY CREATIONS
+   CONTENT CREATION PAGE
+========================================================= */
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.cc-hero {
+
+    position: relative;
+
+    min-height: 92vh;
+
+    padding:
+        130px
+        5vw
+        60px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    border-bottom:
+        1px solid var(--line);
+
+}
+
+
+.cc-hero-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color:
+        var(--accent-soft);
+
+    font-size: 10px;
+
+    letter-spacing: .12em;
+
+}
+
+
+.cc-hero-main {
+
+    position: relative;
+
+    z-index: 3;
+
+    max-width: 850px;
+
+}
+
+
+.cc-eyebrow {
+
+    color:
+        var(--accent-soft);
+
+    font:
+        10px 'DM Mono';
+
+    letter-spacing: .14em;
+
+    margin-bottom: 25px;
+
+}
+
+
+.cc-hero h1 {
+
+    margin: 0;
+
+    font-size:
+        clamp(
+            65px,
+            11vw,
+            170px
+        );
+
+    line-height: .82;
+
+    letter-spacing: -.075em;
+
+}
+
+
+.cc-hero h1 span {
+
+    color:
+        var(--accent);
+
+}
+
+
+.cc-hero-description {
+
+    max-width: 480px;
+
+    margin-top: 45px;
+
+    color:
+        var(--accent-soft);
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+}
+
+
+.cc-hero-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    margin-top: 35px;
+
+    padding:
+        14px
+        18px;
+
+    border:
+        1px solid var(--accent);
+
+    color:
+        var(--accent);
+
+    text-decoration: none;
+
+    font:
+        10px 'DM Mono';
+
+    letter-spacing: .1em;
+
+    transition:
+        .35s ease;
+
+}
+
+
+.cc-hero-button span {
+
+    font-size: 18px;
+
+}
+
+
+.cc-hero-button:hover {
+
+    background:
+        var(--accent);
+
+    color:
+        var(--dark);
+
+}
+
+
+.cc-hero-bottom {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color:
+        var(--accent-soft);
+
+    font-size: 10px;
+
+    letter-spacing: .1em;
+
+}
+
+
+/* =========================================================
+   HERO ORBIT
+========================================================= */
+
+.cc-hero-shape {
+
+    position: absolute;
+
+    width: 560px;
+
+    height: 560px;
+
+    right: -100px;
+
+    top: 50%;
+
+    transform:
+        translateY(-50%);
+
+    color:
+        var(--accent);
+
+    z-index: 1;
+
+}
+
+
+.cc-orbit {
+
+    position: absolute;
+
+    inset: 50% auto auto 50%;
+
+    border:
+        1px solid currentColor;
+
+    border-radius: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+}
+
+
+.orbit-one {
+
+    width: 240px;
+    height: 240px;
+
+}
+
+
+.orbit-two {
+
+    width: 390px;
+    height: 390px;
+
+    opacity: .55;
+
+}
+
+
+.orbit-three {
+
+    width: 540px;
+    height: 540px;
+
+    opacity: .25;
+
+}
+
+
+.cc-orbit-core {
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 95px;
+    height: 95px;
+
+    transform:
+        translate(-50%, -50%);
+
+    border:
+        1px solid var(--accent);
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color:
+        var(--accent);
+
+    font:
+        11px 'DM Mono';
+
+    letter-spacing: .1em;
+
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.cc-intro {
+
+    display: grid;
+
+    grid-template-columns:
+        25% 75%;
+
+    padding:
+        140px 5vw;
+
+    border-bottom:
+        1px solid var(--line);
+
+}
+
+
+.cc-section-number {
+
+    color:
+        var(--accent-soft);
+
+    font-size: 10px;
+
+    letter-spacing: .1em;
+
+}
+
+
+.cc-intro-content {
+
+    max-width: 900px;
+
+}
+
+
+.cc-intro-content h2 {
+
+    margin: 0;
+
+    font-size:
+        clamp(
+            55px,
+            8vw,
+            120px
+        );
+
+    line-height: .84;
+
+    letter-spacing: -.07em;
+
+}
+
+
+.cc-intro-content h2 em {
+
+    color:
+        var(--accent);
+
+    font-style: normal;
+
+}
+
+
+.cc-intro-content p {
+
+    max-width: 530px;
+
+    margin-top: 55px;
+
+    color:
+        var(--accent-soft);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.cc-services {
+
+    padding:
+        120px 5vw;
+
+    border-bottom:
+        1px solid var(--line);
+
+}
+
+
+.cc-section-head {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding-bottom: 25px;
+
+    margin-bottom: 50px;
+
+    border-bottom:
+        1px solid var(--line);
+
+}
+
+
+.cc-section-head div {
+
+    color:
+        var(--accent);
+
+    font-size: 10px;
+
+}
+
+
+.cc-section-head p {
+
+    margin: 0;
+
+    color:
+        var(--accent-soft);
+
+    font:
+        10px 'DM Mono';
+
+}
+
+
+.cc-service-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 16px;
+
+}
+
+
+.cc-service-card {
+
+    position: relative;
+
+    min-height: 350px;
+
+    padding: 30px;
+
+    border:
+        1px solid var(--line);
+
+    background:
+        var(--surface);
+
+    overflow: hidden;
+
+    transition:
+        .45s ease;
+
+}
+
+
+.cc-service-card:hover {
+
+    background:
+        var(--accent);
+
+    color:
+        var(--dark);
+
+}
+
+
+.cc-service-number {
+
+    color:
+        var(--accent-soft);
+
+    font-size: 10px;
+
+}
+
+
+.cc-service-icon {
+
+    margin-top: 55px;
+
+    font-size: 30px;
+
+    color:
+        var(--accent);
+
+    transition:
+        .35s ease;
+
+}
+
+
+.cc-service-card:hover
+.cc-service-icon {
+
+    color:
+        var(--dark);
+
+    transform:
+        translateY(-5px);
+
+}
+
+
+.cc-service-card h3 {
+
+    margin-top: 30px;
+
+    font-size: 35px;
+
+    letter-spacing: -.05em;
+
+}
+
+
+.cc-service-card p {
+
+    max-width: 430px;
+
+    margin-top: 15px;
+
+    color:
+        var(--accent-soft);
+
+    line-height: 1.5;
+
+    font-size: 13px;
+
+}
+
+
+.cc-service-card:hover p,
+.cc-service-card:hover .cc-service-number {
+
+    color:
+        rgba(8,8,8,.65);
+
+}
+
+
+.cc-service-line {
+
+    position: absolute;
+
+    left: 30px;
+
+    right: 30px;
+
+    bottom: 30px;
+
+    height: 1px;
+
+    background:
+        var(--line);
+
+}
+
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+.cc-process {
+
+    display: grid;
+
+    grid-template-columns:
+        40% 60%;
+
+    padding:
+        140px 5vw;
+
+    border-bottom:
+        1px solid var(--line);
+
+}
+
+
+.cc-process-title h2 {
+
+    margin-top: 35px;
+
+    font-size:
+        clamp(
+            55px,
+            7vw,
+            110px
+        );
+
+    line-height: .82;
+
+    letter-spacing: -.07em;
+
+}
+
+
+.cc-process-title h2 span {
+
+    color:
+        var(--accent);
+
+}
+
+
+.cc-process-list {
+
+    border-top:
+        1px solid var(--line);
+
+}
+
+
+.cc-process-item {
+
+    display: grid;
+
+    grid-template-columns:
+        70px 1fr;
+
+    gap: 20px;
+
+    padding:
+        30px 0;
+
+    border-bottom:
+        1px solid var(--line);
+
+}
+
+
+.cc-process-item > span {
+
+    color:
+        var(--accent);
+
+    font-size: 10px;
+
+}
+
+
+.cc-process-item h3 {
+
+    margin: 0;
+
+    font-size: 24px;
+
+    letter-spacing: -.03em;
+
+}
+
+
+.cc-process-item p {
+
+    max-width: 450px;
+
+    margin-top: 10px;
+
+    color:
+        var(--accent-soft);
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+}
+
+.cc-process-item:hover{
+    padding-left: 20px;
+
+}
+/* =========================================================
+   STATEMENT
+========================================================= */
+
+.cc-statement {
+
+    position: relative;
+
+    min-height: 650px;
+
+    padding:
+        100px 5vw;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    border-bottom:
+        1px solid var(--line);
+
+}
+
+
+.cc-statement-bg {
+
+    position: absolute;
+
+    right: -5%;
+
+    top: 50%;
+
+    transform:
+        translateY(-50%);
+
+    font-size:
+        28vw;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    color:
+        rgba(214,180,119,.035);
+
+    white-space: nowrap;
+
+    pointer-events: none;
+
+}
+
+
+.cc-statement-content {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.cc-statement-content > div {
+
+    color:
+        var(--accent-soft);
+
+    font-size: 10px;
+
+}
+
+
+.cc-statement-content h2 {
+
+    margin-top: 30px;
+
+    font-size:
+        clamp(
+            55px,
+            8vw,
+            125px
+        );
+
+    line-height: .82;
+
+    letter-spacing: -.07em;
+
+}
+
+
+.cc-statement-content h2 span {
+
+    color:
+        var(--accent);
+
+}
+
+
+.cc-statement-content p {
+
+    max-width: 500px;
+
+    margin-top: 40px;
+
+    color:
+        var(--accent-soft);
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.cc-cta {
+
+    padding:
+        140px 5vw;
+
+    text-align: center;
+
+}
+
+
+.cc-cta > div {
+
+    color:
+        var(--accent-soft);
+
+    font-size: 10px;
+
+}
+
+
+.cc-cta h2 {
+
+    margin: 35px 0;
+
+    font-size:
+        clamp(
+            65px,
+            11vw,
+            160px
+        );
+
+    line-height: .8;
+
+    letter-spacing: -.08em;
+
+}
+
+
+.cc-cta h2 span {
+
+    color:
+        var(--accent);
+
+}
+
+
+.cc-cta-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding:
+        17px 25px;
+
+    border:
+        1px solid var(--accent);
+
+    color:
+        var(--accent);
+
+    text-decoration: none;
+
+    font:
+        10px 'DM Mono';
+
+    letter-spacing: .1em;
+
+    transition:
+        .35s ease;
+
+}
+
+
+.cc-cta-button span {
+
+    font-size: 18px;
+
+}
+
+
+.cc-cta-button:hover {
+
+    background:
+        var(--accent);
+
+    color:
+        var(--dark);
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 850px) {
+
+
+    .cc-hero {
+
+        min-height: 850px;
+
+        padding:
+            110px 6vw 45px;
+
+    }
+
+
+    .cc-hero-top {
+
+        font-size: 9px;
+
+    }
+
+
+    .cc-hero h1 {
+
+        font-size:
+            clamp(
+                58px,
+                16vw,
+                100px
+            );
+
+    }
+
+
+    .cc-hero-description {
+
+        max-width: 85%;
+
+        margin-top: 35px;
+
+    }
+
+
+    .cc-hero-shape {
+
+        width: 330px;
+
+        height: 330px;
+
+        right: -100px;
+
+        top: 58%;
+
+        opacity: .55;
+
+    }
+
+
+    .orbit-one {
+        width: 145px;
+        height: 145px;
+    }
+
+    .orbit-two {
+        width: 235px;
+        height: 235px;
+    }
+
+    .orbit-three {
+        width: 325px;
+        height: 325px;
+    }
+
+
+    .cc-orbit-core {
+
+        width: 65px;
+        height: 65px;
+
+        font-size: 9px;
+
+    }
+
+
+    .cc-intro {
+
+        display: block;
+
+        padding:
+            90px 6vw;
+
+    }
+
+
+    .cc-intro-content {
+
+        margin-top: 45px;
+
+    }
+
+
+    .cc-intro-content h2 {
+
+        font-size:
+            clamp(
+                50px,
+                13vw,
+                80px
+            );
+
+    }
+
+
+    .cc-services {
+
+        padding:
+            90px 6vw;
+
+    }
+
+
+    .cc-section-head {
+
+        display: block;
+
+    }
+
+
+    .cc-section-head p {
+
+        margin-top: 15px;
+
+    }
+
+
+    .cc-service-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .cc-service-card {
+
+        min-height: 330px;
+
+    }
+
+
+    .cc-process {
+
+        display: block;
+
+        padding:
+            90px 6vw;
+
+    }
+
+
+    .cc-process-list {
+
+        margin-top: 70px;
+
+    }
+
+
+    .cc-statement {
+
+        min-height: 520px;
+
+        padding:
+            80px 6vw;
+
+    }
+
+
+    .cc-statement-bg {
+
+        font-size: 45vw;
+
+    }
+
+
+    .cc-cta {
+
+        padding:
+            100px 6vw;
+
+    }
+
+
+    .cc-cta h2 {
+
+        font-size:
+            clamp(
+                60px,
+                17vw,
+                100px
+            );
+
+    }
+
+}
